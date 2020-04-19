@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Accordion title="Welcome to Your Vue.js App" @expand="expandAll">
+        <p>Stuff 1</p>
+    </Accordion>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Accordion from './components/Accordion.vue'
+import { EventBus } from './main'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        Accordion
+    },
+    methods: {
+        expandAll() {
+            EventBus.$emit("closeAll");
+        }
+    }
 }
 </script>
 
