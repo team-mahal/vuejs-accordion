@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import { EventBus } from './../main'
 export default {
 	name: 'Accordion',
 	props: ["title", "expandAll",'cssclass'],
@@ -53,7 +52,7 @@ export default {
 	   	}
 	},
 	created() {
-	    EventBus.$on("closeAll", this.closeAll);
+	    
 	},
 }
 </script>

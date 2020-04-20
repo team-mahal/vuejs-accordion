@@ -1,6 +1,6 @@
 {
   "name": "vuejs-accordion",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "private": false,
   "homepage": "https://github.com/team-mahal/vuejs-accordion.git",
   "main": "./dist/accordion.common.js",
@@ -16,9 +16,7 @@
       "vue",
       "vuejs",
       "vuejs2",
-      "vue-components",
-      "vue-components",
-      "vue-editable-element"
+      "vue-components"
   ],
   "dependencies": {
     "core-js": "^3.6.4",
@@ -33,35 +31,19 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
   ],
-  "description": "## Project setup ``` yarn install ```",
-  "main": ".eslintrc.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/team-mahal/vue-collapse.git"
+    "url": "git+https://github.com/team-mahal/vuejs-accordion.git"
   },
   "author": "teammahal <md.jual.ah@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/team-mahal/vue-collapse/issues"
+    "url": "https://github.com/team-mahal/vuejs-accordion/issues"
   },
   "files": [
     "dist/*",

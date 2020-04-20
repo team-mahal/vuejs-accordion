@@ -1,4 +1,4 @@
-import Accordion from './components/Accordion';
+import Accordion from './components/Accordion.vue'
 
 function install(Vue) {
   if (install.installed) return;

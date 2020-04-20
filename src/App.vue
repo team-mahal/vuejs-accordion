@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass' @expand="expandAll" class="w-1/2 mx-auto my-3">
+	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass' class="w-1/2 mx-auto my-3">
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
@@ -12,7 +12,7 @@
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
 	</Accordion>
-	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass' @expand="expandAll" class="w-1/2 mx-auto my-3">
+	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass'  class="w-1/2 mx-auto my-3">
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
@@ -29,7 +29,6 @@
 
 <script>
 import Accordion from './components/Accordion.vue'
-import { EventBus } from './main'
 export default {
 	name: 'App',
 	data() {
@@ -54,7 +53,7 @@ export default {
 	},
 	methods: {
 		expandAll() {
-			EventBus.$emit("closeAll");
+			
 		}
 	}
 }
