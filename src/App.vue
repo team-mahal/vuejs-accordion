@@ -1,16 +1,28 @@
 <template>
 <div id="app">
-	<Accordion title="Welcome to Your Vue.js App" @expand="expandAll">
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
-		<p>Stuff 1</p>
+	<Accordion title="Welcome to Your Vue.js App" @expand="expandAll" class="w-1/2 mx-auto">
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+	</Accordion>
+	<Accordion title="Welcome to Your Vue.js App" @expand="expandAll" class="w-1/2 mx-auto">
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
+		<p class="pb-2">Stuff 1</p>
 	</Accordion>
 </div>
 </template>
