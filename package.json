@@ -16,7 +16,8 @@
       "vue",
       "vuejs",
       "vuejs2",
-      "vue-components"
+      "vue-components",
+      "vuejs-accordion"
   ],
   "dependencies": {
     "core-js": "^3.6.4",
