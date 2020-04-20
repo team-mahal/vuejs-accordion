@@ -2,7 +2,7 @@
 <div class="column is-half">
 	<div class="card" :class="{ 'not-expanded': !this.expanded }">
 
-		<header class="card-header" @click="toggleCardState">
+		<header class="cursor-pointer" @click="toggleCardState">
 			<p class="card-header-title">
 				{{title}}
 			</p>
@@ -49,16 +49,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.card {
-	 margin-bottom: 10px;
-	 width: 100%;
-}
- .card .card-header {
-	 cursor: pointer;
-}
  .card .card-header .icon {
-	 transform: rotate(180deg);
-	 transition: transform 150ms ease-out;
+	transform: rotate(180deg);
+	transition: transform 150ms ease-out;
 }
  .card .card-content {
 	 transition: all 150ms ease;
