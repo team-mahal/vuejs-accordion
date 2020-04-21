@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass' class="w-1/2 mx-auto my-3">
+	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass' class="w-1/2 mx-auto my-3" @othersunexpanded="sunexpanded">
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
@@ -12,7 +12,7 @@
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
 	</Accordion>
-	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass'  class="w-1/2 mx-auto my-3">
+	<Accordion title="Welcome to Your Vue.js App" :cssclass='cssclass' class="w-1/2 mx-auto my-3" @othersunexpanded="sunexpanded">
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
 		<p class="pb-2">Stuff 1</p>
@@ -33,6 +33,12 @@ export default {
 	name: 'App',
 	data() {
 		return {
+			accordiondata:[
+				{
+					title:"Welcome to Your Vue.js App",
+					expanded:false
+				}
+			],
 			cssclass: {
 				content:'pl-8 pr-8 pb-5 text-grey-darkest border-l-2 border-indigo-500',
 				header:{
@@ -52,6 +58,10 @@ export default {
 		Accordion
 	},
 	methods: {
+		sunexpanded(){
+			this.expanded=false;
+			console.log("asaaaaaaaaaa")
+		},
 		expandAll() {
 			
 		}

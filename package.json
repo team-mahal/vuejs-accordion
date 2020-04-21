@@ -1,6 +1,6 @@
 {
   "name": "vuejs-accordion",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "homepage": "https://github.com/team-mahal/vuejs-accordion.git",
   "main": "./dist/accordion.common.js",

@@ -34,9 +34,7 @@ Vue.use(Accordion)
 </template>
 
 <script>
-import Accordion from './components/Accordion.vue'
 export default {
-	name: 'App',
 	data() {
 		return {
 			cssclass: {
@@ -53,9 +51,6 @@ export default {
 				}
 			}
 		}
-	},
-	components: {
-		Accordion
 	},
 	methods: {
 		expandAll() {
